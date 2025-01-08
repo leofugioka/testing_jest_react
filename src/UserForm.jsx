@@ -19,17 +19,20 @@ function UserForm({ onUserAdd }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="name">Name</label>
-        <input type="text" id="name" value={name} onChange={onNameChange} />
-      </div>
-      <div>
-        <label htmlFor="email">Email</label>
-        <input type="text" id="email" value={email} onChange={onEmailChange} />
-      </div>
-      <button>Add User</button>
-    </form>
+    <>
+      <h2>Add User</h2>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label htmlFor="name">Name</label>
+          <input type="text" id="name" value={name} onChange={onNameChange} />
+        </div>
+        <div>
+          <label htmlFor="email">Email</label>
+          <input type="text" id="email" value={email} onChange={onEmailChange} />
+        </div>
+        <button>Add User</button>
+      </form>
+    </>
   );
 }
 
