@@ -16,6 +16,8 @@ function UserForm({ onUserAdd }) {
     e.preventDefault();
 
     onUserAdd({ name, email });
+    setName("");
+    setEmail("");
   };
 
   return (
